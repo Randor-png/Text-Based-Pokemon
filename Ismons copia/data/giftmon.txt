@@ -1,0 +1,2 @@
+#int index, int gender, String nickname, int level, int ability, int[] tp, int nature, int characteristic, int[] mosse
+gift = 66, 0, , 6, 6, 0 0 0 0 0 0, 2, 20, 1 4 0 0;\

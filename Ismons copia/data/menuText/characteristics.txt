@@ -1,0 +1,38 @@
+characteristics = Loves to eat ,\
+				  Takes plenty of siestas ,\
+				  Nods off a lot ,\
+				  Scatters things often ,\
+				  Likes to relax ,\
+				  Proud of its power ,\
+				  Likes to thrash about ,\
+				  A little quick tempered ,\
+				  Likes to fight ,\
+				  Quick tempered ,\
+				  Study body ,\
+				  Capable of taking hits ,\
+				  Highly persistent ,\
+				  Good endurance ,\
+				  Good perseverance ,\
+				  Highly curious ,\
+				  Mischievous ,\
+				  Thoroughly cunning ,\
+				  Often lost in thought ,\
+				  Very finicky ,\
+				  Strong willed ,\
+				  Somewhat vain ,\
+				  Strongly defiant ,\
+				  Hates to lose ,\
+				  Somewhat stubborn ,\
+				  Likes to run ,\
+				  Alert to sounds ,\
+				  Impetuous and silly ,\
+				  Somewhat of a clown ,\
+				  Quick to flee ,\
+
+charEffects = ;\
+			  ;\
+			  ;\
+			  ;\
+			  ;\
+			  STAB +0.2;\
+			  PHYSICAL +1.5 - RECOIL 20;\

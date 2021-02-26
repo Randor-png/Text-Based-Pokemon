@@ -1,0 +1,16 @@
+move = name - description - special/physical - Type - damage('f' or 'fd' if fixed damage) - precision('p' or 'ap' if precision can't be altered) - PP - priority - Statmodifier - specialCase - StatusEffect; \
+       Tackle - A physical attack in which the user charges and slams into the target with its whole body. - physical - 1 - 40 - 100 - 35 - 0 -  -  -  ; \
+       Scratch - Hard, pointed, sharp claws rake the target to inflict damage. - physical - 1 - 40 - 100 - 35 - 0 -  -  -  ; \
+       Growl - The user growls in an endearing way, making opposing Pokémon less wary. This lowers their Attack stat. - special - 1 - 0 - 100 - 40 - 0 - b 100 1 -1 -  -  ; \
+       Leer - The user gives opposing Pokémon an intimidating leer that lowers the Defense stat. - special - 1 - 0 - 100 - 30 - 0 - b 100 2 -1 -  -  ; \
+       Tail Whip - The user wags its tail cutely, making opposing Pokémon less wary and lowering their Defense stat. - special - 1 - 0 - 100 - 30 - 0 - b 100 2 -1 -  -  ; \
+       Vine Whip - The target is struck with slender, whiplike vines to inflict damage. - physical - 12 - 45 - 100 - 25 - 0 -  -  -  ; \
+       Water Gun - The target is blasted with a forceful shot of water. - special - 11 - 40 - 100 - 25 - 0 -  -  -  ; \
+       Ember - The target is attacked with small flames. This may also leave the target with a burn. - special - 10 - 40 - 100 - 25 - 0 -  -  - b 10 2; \
+       Pound - The target is physically pounded with a long tail, a foreleg, or the like. - physical - 1 - 40 - 100 - 35 - 0 -  -  -  ; \
+       Absorb - A nutrient-draining attack. The user’s HP is restored by half the damage taken by the target. - special - 12 - 20 - 100 - 25 - 0 -  - absorb 2 -  ; \
+       Withdraw - The user withdraws its body into its hard shell, raising its Defense stat. - special - 11 - 0 - 100 - 40 - 0 - a 100 2 +1 -  -  ; \
+       Bubble - A spray of countless bubbles is jetted at the opposing Pokémon. This may also lower their Speed stat. - special - 11 - 40 - 100 - 30 - 0 - b 10 5 -1 -  -  ; \
+       Leafage - The user attacks by pelting the target with leaves. - physical - 12 - 40 - 100 - 40 - 0 -  -  -  ; \
+       Struggle - This attack is used in desperation only if the user has no PP. It also damages the user a little. - physical - 0 - 50 - a100 - 10 - 0 -  - recoil struggle -  ; \
+       Volt Tackle - The user electrifies itself and charges the target. It causes considerable damage to the user and may leave the target with paralysis. - physical - 13 - 120 - 100 - 15 - 0 -  - recoil 3 - b 10 4; \

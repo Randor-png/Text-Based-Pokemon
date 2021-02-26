@@ -1,0 +1,24 @@
+main = Name - EFFECT1(Repeats at the end of every turn) - EFFECT2(Repeats during your attacking turn) - EFFECT3(Permanent until removed) - NUMBERTURNS(minTurns,maxTurns) - TYPESIMMUNE;\
+K.O. -  -  - FAINT -  -  ;\
+BURN - HP(-6.25) -  - STAT(1,-50) -  - 10;\
+PARALYSIS -  - MOVE(50) - STAT(5,-50) -  - 13;\
+SLEEP -  - MOVE(0) -  - 1,3 -  ;\
+SLEEP -  - MOVE(0) -  - 1,3 - 12;\
+FROZEN -  - MOVE(0) -  - 2,5 - 15;\
+POISON - HP(12.5) -  -  -  - 4,9;\
+TOXIC - HP(-6.25 turn) -  -  -  - 4,9;\
+
+secondary = Name - EFFECT1(Repeats at the end of every turn) - EFFECT2(Repeats during your attacking turn) - EFFECT3(Permanent until removed) - NUMBERTURNS(minTurns,maxTurns) - TYPESIMMUNE;\
+CONFUSION -  - ITSELF(33) -  - 1,5 -  ;\
+FLINCH -  - MOVE(0) -  - 1,1 -  ;\ 
+
+applyText = is already afflicted by a Status!;\
+			has fainted! -  -  - was revived!;\
+			was burned! - was hurt by the burns! -  - 's burns went away!;\
+			was paralyzed! -  - is paralyzed and can't move! - was cured from Paralysis;\
+			fell asleep! -  - is sleeping... - woke up!;\
+			fell asleep -  - is sleeping... - woke up!;\
+			was frozen! -  - is solid frozen... - broke free from the ice!;\
+			was poisoned! - was hurt by poison! -  - was cured from the poison!;\
+			was badly poisoned! - was hurt by poison! -  - was cured from the poison!;\
+			is immune!;\

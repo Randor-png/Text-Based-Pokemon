@@ -1,0 +1,20 @@
+commonevents = TEXT(  The value of the Local Variable 0 of this map is $v[M0]!) : \
+			   REFRESH() : \
+			   TEXT(  These events can be called in any map with\n  the command 'COMMONEVENT' and giving the row of\n  the Common Event you want to execute!) : /\
+\
+			   IF(TILE $v[1]-$v[2] £) 1 : \
+			     VAR(3 = 0) : \
+			     LOOP() 1 : \
+			       SVAR(1 = MON_$v[3]{OWABILITY}) : \
+			       IF(SVAR 1 == CUT) 2 : \
+			         SVAR(1 = MON_$v[3]{NICKNAME}) : \
+			         TEXT(  $v[s1] uses Cut!) : \
+			         CHANGE($v[1]-$v[2] .) : \
+			       	 VAR(3 = 5) : \
+			       ENDIF 2 : \
+			       VAR(3 += 1) : \
+		 	     WHEN(VAR 3 < 6) 1 : \
+			   ENDIF 1 : \
+			   IF(TILE $v[1]-$v[2] £) 1 : \
+		 	       TEXT(  You need a Pokémon that can cut bushes!) : \
+		 	   ENDIF 1 : /\

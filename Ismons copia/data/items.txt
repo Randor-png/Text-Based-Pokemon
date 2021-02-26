@@ -1,0 +1,10 @@
+items = Name - Type(Medicine 1, KeyItem 2, Item 3) - Description - Effect ;\
+		Potion - 1 - A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon. - CURE  20 ;\
+		Super Potion - 1 - A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon. - CURE  60 ;\
+		Hyper Potion - 1 - A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pokémon. - CURE  120 ;\
+		Max Potion - 1 - A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pokémon. - CURE a100 ;\
+		Full Restore - 1 - A medicine that can be used to fully restore the HP of a single Pokémon and heal any status conditions it has. - RESTORE ;\
+		Revive - 1 - A medicine that can be used to revive a single Pokémon that has fainted. It also restores half of the Pokémon's max HP. - REVIVE 50 ;\
+		Max Revive - 1 - A medicine that can be used to revive a single Pokémon that has fainted. It also fully restores the Pokémon's max HP. - REVIVE 100 ;\
+		Small Key - 2 - Mono-use key. Can open a simple door, but it breaks upon use. -   ;
+		Moonstone - 3 - A peculiar stone that can make certain species of Pokémon evolve. It is as black as the night sky. - STONE(4)

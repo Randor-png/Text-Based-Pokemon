@@ -1,0 +1,22 @@
+sheetText = Name: [a] ,\
+            Nickname: [a] ,\
+            Type: [a] ,\
+            Sex: [a] ,\
+            Has a [a] Nature ,\
+            Ability: [a] ,\
+            Level: [a] ,\
+            Exp: [a] ,\
+            To next level: [a] \
+
+stats = HP, Atk, Def, SpA, Spe, Spd
+
+sex = Male, Female, Unknown
+
+moves = [a] ,\
+		Description: [a] ,\
+		Type: [a] ,\
+		( [a] ),\
+		Damage: [a] ,\
+		Precision: [a] ,\
+		PP: [a] \
+

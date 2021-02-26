@@ -1,0 +1,13 @@
+TEXT(Put your text here.) //You can display text with this command
+TEXT($v[0] $v[m0]) //You can also show the value of a global or map variable
+
+VAR(varID = value) //You can alter the value of a global variable with this command
+VAR(varID += value)
+VAR(varID -= value)
+VAR(varID *= value)
+VAR(varID /= value)
+LVAR(lvarID += value) //You can alter the value of a map variable with this command
+VAR(varID = $v[0])	  //You can also pass the value of a global or map variable to another
+LVAR(lvarID = $v[l0]) 
+
+CHANGE(mapX-mapY tileToChangeInto) //You can change the tile at a specific coordinate of the map using this command

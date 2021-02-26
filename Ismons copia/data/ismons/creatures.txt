@@ -1,0 +1,84 @@
+pokemon = name, base stats, ability1, ability2, types, levelupRate, evolveMethod, startMoves, expDrop, overworldAction; \
+	     Bulbasaur, 45 49 49 65 65 45, 1, 0, 12 4, 4, LEVEL(16) - 2, 1 3 0 0, 64; \
+          Ivysaur, 60 62 63 80 80 60, 1, 0, 12 4, 4, LEVEL(36) - 3, 1 3 0 0, 142; \
+          Venusaur, 90 82 83 100 100 80, 1, 0, 12 4, 4, none, 1 3 0 0, 236; \
+          Charmander, 39 52 43 60 50 65, 2, 0, 10, 4, LEVEL(16) - 5, 2 3 0 0, 62; \
+          Charmeleon, 58 64 58 80 65 80, 2, 0, 10, 4, LEVEL(36) - 6, 2 3 0 0, 142; \
+          Charizard, 78 84 80 110 85 100, 2, 0, 10 3, 4, none, 2 3 0 0, 240; \
+          Squirtle, 44 48 65 50 64 34, 3, 0, 11, 4, LEVEL(16) - 8, 1 5 0 0, 63, SWIM; \
+          Wartortle, 59 63 80 65 80 58, 3, 0, 11, 4, LEVEL(36) - 9, 1 5 0 0, 142, SWIM; \
+          Blastoise, 80 83 103 88 105 80, 3, 0, 11, 4, none, 1 5 0 0, 239, SWIM; \
+          Chikorita, 45 49 65 49 65 45, 1, 0, 12, 4, LEVEL(16) - 11, 1 3 0 0, 64; \
+          Bayleef, 60 62 80 63 80 60, 1, 0, 12, 4, LEVEL(36) - 12, 1 3 0 0, 142; \
+          Meganium, 83 82 100 90 100 80, 1, 0, 12, 4, none, 1 3 0 0, 236; \
+          Cyndaquil, 39 52 43 60 50 65, 2, 0, 10, 4, LEVEL(16) - 14, 1 4 0 0, 62, FIRE; \
+          Quilava, 58 64 58 80 65 80, 2, 0, 10, 4, LEVEL(36) - 15, 1 4 0 0, 142; \
+          Typhlosion, 78 84 80 110 90 105, 2, 0, 10 5, 4, none, 1 4 0 0, 240; \
+          Totodile, 50 65 64 44 48 43, 3, 0, 11, 4, LEVEL(20) - 17, 2 4 0 0, 63, SWIM; \
+          Crocornaw, 67 84 80 59 65 60, 3, 0, 11, 4, LEVEL(40) - 18, 2 4 0 0, 142, SWIM; \
+          Feraligatr, 85 106 100 79 90 80, 3, 0, 11 16, 4, none, 2 4 0 0, 239, SWIM; \
+          Treecko, 40 45 35 65 55 70, 1, 0, 12, 4, LEVEL(16) - 20, 9 4 0 0, 62, CUT; \
+          Grovyle, 50 65 45 85 65 95, 1, 0, 12, 4, LEVEL(36) - 21, 9 4 0 0, 142, CUT; \
+          Sceptile, 70 90 65 110 85 120, 1, 0, 12, 4, none, 9 4 0 0, 239, CUT; \
+          Torchic, 45 60 40 70 50 45, 2, 0, 10, 4, LEVEL(16) - 23, 2 3 0 0, 62; \
+          Combusken, 60 85 60 85 60 55, 2, 0, 10 2, 4, LEVEL(36) - 24, 2 3 0 0, 142; \
+          Blaziken, 80 120 70 110 70 80, 2, 0, 10 2, 4, none, 2 3 0 0, 239; \
+          Mudkip, 50 70 50 50 50 40, 3, 0, 11, 4, LEVEL(16) - 26, 1 3 0 0, 62, SWIM; \
+          Marshtomp, 70 85 70 60 70 50, 3, 0, 11 5, 4, LEVEL(36) - 27, 1 3 0 0, 142, SWIM; \
+          Swampert, 105 110 90 85 95 60, 3, 0, 11 5, 4, none, 1 3 0 0, 241, SWIM; \
+          Turtwig, 55 68 64 45 55 31, 1, 0, 12, 4, LEVEL(18) - 29, 1 11 0 0, 64; \
+          Grotle, 75 89 85 55 65 36, 1, 0, 12, 4, LEVEL(32) - 30, 1 11 0 0, 142; \
+          Torterra, 95 109 115 75 95 56, 1, 0, 12 5, 4, none, 1 11 0 0, 236; \
+          Chimchar, 44 58 44 58 44 61, 2, 0, 10, 4, LEVEL(16) - 32, 2 4 0 0, 62; \
+          Monferno, 64 78 52 78 52 81, 2, 0, 10 2, 4, LEVEL(36) - 33, 2 4 0 0, 142; \
+          Infernape, 76 104 71 104 71 110, 2, 0, 10 2, 4, none, 2 4 0 0, 240; \
+          Piplup, 53 51 53 61 56 40, 3, 0, 11, 4, LEVEL(16) - 34, 9 3 0 0, 63, SWIM; \
+          Prinplup, 64 66 68 81 76 50, 3, 0, 11, 4, LEVEL(36) - 36, 9 3 0 0, 142, SWIM; \
+          Empoleon, 88 86 88 119 105 60, 3, 0, 11 9, 4, none, 9 3 0 0, 239, SWIM; \
+          Snivy, 45 45 55 45 55 63, 1, 0, 12, 4, LEVEL(20) - 38, 1 4 0 0, 62; \
+          Servine, 60 60 75 60 75 85, 1, 0, 12, 4, LEVEL(40) - 39, 1 4 0 0, 145; \
+          Serperior, 80 80 95 95 95 113, 1, 0, 12 16, 4, none, 1 4 0 0, 238; \
+          Tepig, 65 63 45 45 45 45, 2, 0, 10, 4, LEVEL(17) - 41, 1 5 0 0, 62; \
+          Pignite, 90 93 55 70 55 55, 2, 0, 10 2, 4, LEVEL(36) - 42, 1 5 0 0, 146; \
+          Emboar, 110 123 80 100 65 70, 2, 0, 10 2, 4, none, 1 5 0 0, 239; \
+          Oshawott, 55 55 45 63 45 45, 3, 0, 11, 4, LEVEL(17) - 44, 1 5 0 0, 62, SWIM; \
+          Dewott, 75 75 60 83 60 60, 3, 0, 11, 4, LEVEL(36) - 45, 1 5 0 0, 145, SWIM; \
+          Samurott, 95 110 85 108 75 75, 3, 0, 11, 4, none, 1 5 0 0, 238, SWIM; \
+          Chespin, 56 61 65 48 45 38, 1, 0, 12, 4, LEVEL(16) - 47, 1 3 0 0, 63; \
+          Quilladin, 61 78 95 56 58 57, 1, 0, 12 2, 4, LEVEL(36) - 48, 1 3 0 0, 142; \
+          Chesnaugh, 93 107 122 74 80 64, 1, 0, 12 2, 4, none, 1 3 0 0, 239; \
+          Fennekin, 40 45 40 62 60 60, 2, 0, 10, 4, LEVEL(16) - 50, 2 5 0 0, 61; \
+          Braixen, 59 59 58 90 70 73, 2, 0, 10, 4, LEVEL(36) - 51, 2 5 0 0, 143; \
+          Delphox, 75 69 72 125 100 104, 2, 0, 10 14, 4, none, 2 5 0 0, 240; \
+          Froakie, 41 56 50 62 44 71, 3, 0, 11, 4, LEVEL(16) - 53, 9 3 0 0, 63, SWIM; \
+          Frogadier, 54 63 52 83 56 97, 3, 0, 11, 4, LEVEL(36) - 54, 9 3 0 0, 142, SWIM; \
+          Greninja, 72 95 67 105 71 122, 3, 0, 11 17, 4, none, 9 3 0 0, 239, SWIM; \
+          Rowlet, 68 55 55 50 50 42, 1, 0, 12 3, 4, LEVEL(17) - 56, 1 3 0 0, 64; \
+          Dartrix, 78 75 75 70 70 52, 1, 0, 12 3, 4, LEVEL(34) - 57, 1 3 0 0, 147; \
+          Decidueye, 80 107 75 107 100 70, 1, 0, 12 8, 4, none, 1 3 0 0, 239; \
+          Litten, 45 65 40 60 40 70, 2, 0, 10, 4, LEVEL(17) - 59, 2 3 0 0, 64; \
+          Torracat, 65 85 50 80 50 90, 2, 0, 10, 4, LEVEL(34) - 60, 2 3 0 0, 147; \
+          Incineroar, 95 115 90 80 90 60, 2, 0, 10 17, 4, none, 2 3 0 0, 239; \
+          Popplio, 50 54 54 66 56 40, 3, 0, 11, 4, LEVEL(17) - 62, 9 3 0 0, 64, SWIM; \
+          Brionne, 60 69 69 91 81 50, 3, 0, 11, 4, LEVEL(34) - 63, 9 3 0 0, 147, SWIM; \
+          Primarina, 80 74 80 126 116 60, 3, 0, 11 18, 4, none, 9 3 0 0, 239, SWIM; \
+          Skitty, 50 45 45 35 35 50, 4, 5, 1, 2, STONE(4) - 65, , 52, CUT; \
+          Delcatty, 75 95 65 65 65 109, 4, 5, 1, 2, none, , 140, CUT; \
+          Shinx, 45 65 34 40 34 45, 6, 0, 13, 4, LEVEL(15) - 67, 1 4 0 0, 53; \
+          Luxio, 60 85 49 60 49 60, 6, 0, 13, 4, LEVEL(30) - 68, 1 4 0 0, 127; \
+          Luxray, 80 120 80 100 80 105, 6, 0, 13 0, 4, none, 1 4 0 0, 235; \
+          Ledyba, 40 30 30 30 80 55, 7, 8, 7 3, 2, LEVEL(18) - 70, 1 4 0 0, 53; \
+          Ledian, 55 75 50 45 110 90, 7, 8, 7 3, 2, none, 1 4 0 0, 137; \
+
+
+How_To_Write_Evolution = if doesn't evolve: none \
+                         if one condition: COND1 - EVOLUTION\
+                         if multiple conditions: COND1 && COND2 - EVOLUTION\
+                         if multiple evolutions: COND 1 - EVOLUTION1 || COND2 - EVOLUTION2\
+                         if multiple evolutions with multiple conditions: COND1 && COND2 - EVOLUTION1 || COND3 && COND4 - EVOLUTION 2
+
+
+pokedex = pokemon id - species name - description - height - weight; \
+          1 - Seed Pokémon - Bulbasaur is born with a small seed growing on its back. By soaking up the sun's rays, the seed grows progressively larger. - 0.7 m - 6.9 kg; \
+          2 - Seed Pokémon - To support the growing weight of the bud, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon. - 1.0 m - 13 kg; \
+          3 - Seed Pokémon - The large flower on Venusaur's back is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people. - 2.0 m - 100 kg; \

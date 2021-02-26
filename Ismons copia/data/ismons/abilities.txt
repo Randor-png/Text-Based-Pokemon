@@ -1,0 +1,9 @@
+ability = name - description - effect; \
+		  Overgrow - Powers up Grass-type moves when the Pokémon's HP is low. - boost 12 3; \
+		  Blaze - Powers up Fire-type moves when the Pokémon's HP is low. - boost 10 3; \
+		  Torrent - Powers up Water-type moves when the Pokémon's HP is low. - boost 11 3; \
+		  Cute Charm - Contact with the Pokémon may cause infatuation. - effect Charm 30; \
+		  Wonder Skin - Makes status-changing moves more likely to miss. -  miss Status 2; \
+		  Intimidate - The Pokémon intimidates opposing Pokémon upon entering battle, lowering their Attack stat. - BUFF b 1 -1; \
+		  Huge Power - Doubles the Pokémon’s Attack stat. - RATE a 1 200; \
+		  Swarm - Powers up Bug-type moves when the Pokémon's HP is low. - boost 7 3;\

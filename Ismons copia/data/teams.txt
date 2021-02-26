@@ -1,0 +1,2 @@
+teams = pokemon , gender , level , nature , characteristic, ability , ev1 ev2 ev3 ev4 ev5 ev6 , move1 move2 move3 move4 ;  I\
+		19 , 0 , 5 , 1 , 25 , 1 , 0 0 0 0 0 0 , 10 4 9 0 ;  I\
