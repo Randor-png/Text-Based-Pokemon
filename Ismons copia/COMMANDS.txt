@@ -1,13 +1,116 @@
+#### THESE COMMANDS ARE TO USE ONLY IN THE EVENTS TEXT FILES ####
+
+## HOW THE PROGRAM STURCTURE WORKS ##
+
+After you write an event, put an ":" at the end, like this:
+
+EVENT : \ //remember to add the left-leaning slash there, and to space ":" from the event
+
+At the end of the event sequence, add a right-leaning slash "/"
+
+
+## TOUCH EVENTS ##
+
+These events are activated only when the player is nearby the specified coordinates
+
+mapx-mapy : EVENT : \
+            EVENT : \
+            EVENT : /\
+\
+mapx-mapy : EVENT : \
+            EVENT : /\
+            
+            
+## STEP EVENTS ##
+
+These events work like Touch Events, but are activated only when the player is placed exactly on the specified coordinates
+
+## RUNNING EVENTS ##
+
+These events are repeated at every "cycle" (everytime the player takes a step or action). They don't need a "/" at the end, since they all play together. Use IF conditions to keep control of them.
+
+IF(CONDTION) 1 : \
+  EVENT : \
+  IF (CONDITION) 2 : \
+    EVENT : \
+  ENDIF 2 : \
+ENDIF 1 : \
+
+IF(CONDITION) 1 : \
+  EVENT: \
+ENDIF 1 : \
+
+## EVENTS ##
+
 TEXT(Put your text here.) //You can display text with this command
-TEXT($v[0] $v[m0]) //You can also show the value of a global or map variable
+TEXT($v[0] $v[m0] $v[s0]) //You can also show the value of a global, map or string variable
 
 VAR(varID = value) //You can alter the value of a global variable with this command
 VAR(varID += value)
 VAR(varID -= value)
 VAR(varID *= value)
 VAR(varID /= value)
+
 LVAR(lvarID += value) //You can alter the value of a map variable with this command
-VAR(varID = $v[0])	  //You can also pass the value of a global or map variable to another
-LVAR(lvarID = $v[l0]) 
+
+SVAR(svarID = "ciao") //Svar is a type of string that can contain alphanumerical values
+
+VAR(varID = $v[0])	  //You can also pass the value of a global, map or String variable to another
+LVAR(lvarID = $v[m0])
+SVAR(svarID = $v[s0])
+
+//You can take values to store in variables from a pokemon team slot as well
+VAR(varID = MON_0{FULL}) //checks if that space in the team is occupied by a pokémon
+VAR(varID = MON_$v[0]{INDEX}) //takes the id value of that pokemon specie. You can use a variable to check a specific team slot, as you can see
+VAR(varID = MON_$v[0]{LEVEL}) //takes the pokémon's level
+VAR(varID = MON_$v[0]{HP}) //takes the Max HP
+VAR(varID = MON_$v[0]{cHP}) //takes the current HP
+VAR(varID = MON_$v[0]{ATK}) //takes the Attack
+VAR(varID = MON_$v[0]{DEF}) //takes the Defense
+VAR(varID = MON_$v[0]{SPA}) //takes the Special Attack
+VAR(varID = MON_$v[0]{SPD}) //takes the Special Defense
+VAR(varID = MON_$v[0]{SPE}) //takes the Speed
+SVAR(varID = MON_$v[0]{NAME}) //takes the Name of the pokemon specie
+SVAR(varID = MON_$v[0]{NICKNAME}) //takes the Nickname. If it doesn't have any, it will return the specie's name
+SVAR(varID = MON_$v[0]{OWABILITY}) //takes the Overworld Ability
+
+REFRESH() //Refreshes the map, and rechecks the Running events. Don't use it inside a Running event, or it will cause an endless loop
+
+MAP(mapid mapx-mapy) //Teleports the player to the map indicated at the specified coordinates. Doesn't support variables for now.
+
+ADDITEM(itemID, quantity) //Adds the item to the player's Inventory. Doesn't support variables for now.
 
 CHANGE(mapX-mapY tileToChangeInto) //You can change the tile at a specific coordinate of the map using this command
+CHANGE($v[0]-$v[m0] tileToChangeInto) //Supports variables for coordinates
+
+## CONDITION BRANCHES AND LOOPS ##
+
+IF(CONDITION) ifID : \
+stuff : \
+ENDIF ifID : \  //runs the events between these two commands if the condition inside it is true. the ifID is a integer value used so the program has a way to determine the beginning and end of the events in the IF branch. Use different ifIDs if you need to write an IF inside another IF
+
+ELSE(ifID) : \ //if you want an event to run only if the IF condition results false, write this instead of ENDIF at the end.
+stuff : \
+ENDELSE ifID : \
+
+LOOP() loopID : \
+stuff : \
+WHEN(CONDITION) loopID : \ //works like IF, but it will repeat the events inside it as long as the condition written in it is true
+
+## POSSIBLE CONDITIONS ##
+
+(VAR 0 == value) //checks if the Var, Lvar or Svar is equal to the value written on the right. Doesn't support variables for now.
+(VAR 0 >= value) //checks if the Var, Lvar or Svar is bigger/equal to the value written on the right. Doesn't support variables for now.
+(VAR 0 > value) //checks if the Var, Lvar or Svar is bigger than value written on the right. Doesn't support variables for now.
+(VAR 0 <= value) //checks if the Var, Lvar or Svar is smaller/equal to the value written on the right. Doesn't support variables for now.
+(VAR 0 < value) //checks if the Var, Lvar or Svar is smaller than the value written on the right. Doesn't support variables for now.
+
+(ITEM itemId == value) //checks if the player's Inventory containes the amount indicated of the specific item. Doesn't support variables for now.
+(ITEM itemId >= value) //checks if the player's Inventory containes more or the same amount indicated of the specific item. Doesn't support variables for now.
+(ITEM itemId > value) //checks if the player's Inventory containes more than the amount indicated of the specific item. Doesn't support variables for now.
+(ITEM itemId <= value) //checks if the player's Inventory containes less or the same amount indicated of the specific item. Doesn't support variables for now.
+(ITEM itemId < value) //checks if the player's Inventory containes less than the amount indicated of the specific item. Doesn't support variables for now.
+
+(TILE 5-$v[2] £) //checks if the tile of the map indicated is occupied by the specific character. You can use variables for the coordinates, as you see.
+
+
